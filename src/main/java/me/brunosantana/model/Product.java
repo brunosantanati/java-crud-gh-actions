@@ -12,7 +12,10 @@ import org.hibernate.annotations.CreationTimestamp;
 public class Product {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  //@GeneratedValue(strategy = GenerationType.AUTO)
+  //The seed script inserts products until id 3, so for this demo application I'm starting the sequence with 4 to avoid DataIntegrityViolationException
+  @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "product_id_seq")
+  @SequenceGenerator(name = "product_id_seq", sequenceName = "product_id_seq", allocationSize = 1, initialValue = 4)
   private long id;
 
   @Column(name = "name")
