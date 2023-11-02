@@ -9,8 +9,9 @@ docker inspect 21b8 | grep IPAddress
 
 Enable in the GCP console:
 ----------------
-Container Registry
+Google Container Registry API
 Cloud Resource Manager API
+Cloud Build API
 ----------------
 
 Install the gcloud CLI
