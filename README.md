@@ -14,6 +14,7 @@ In another terminal:
 export PATH=$PATH:~/temp/google-cloud-sdk/bin/
 gcloud init
 gcloud auth configure-docker --quiet
+gcloud auth activate-service-account github-actions@gh-actions-403902.iam.gserviceaccount.com --key-file=/home/bruno/.docker/gh-actions-403902-3190da419204.json
 
 Generate tag and push it to Google Container Registry
 docker tag java-crud-gh-actions gcr.io/gh-actions-403902/java-crud-gh-actions
