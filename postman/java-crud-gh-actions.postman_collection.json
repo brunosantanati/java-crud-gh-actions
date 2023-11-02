@@ -21,10 +21,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/products",
+					"raw": "http://{{host}}:8080/products",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -49,10 +49,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/products/1",
+					"raw": "http://{{host}}:8080/products/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -69,10 +69,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/products",
+					"raw": "http://{{host}}:8080/products",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -88,10 +88,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/products/1",
+					"raw": "http://{{host}}:8080/products/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
@@ -108,10 +108,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/products/1",
+					"raw": "http://{{host}}:8080/products/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
 					"port": "8080",
 					"path": [
