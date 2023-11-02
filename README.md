@@ -67,6 +67,7 @@ https://java-crud-gh-actions-ktptbevp5q-ue.a.run.app/products
 [Push the Docker image to the Google Container Register](https://www.harubears.com/en/push-the-docker-image-to-the-google-container-register/)  
 [Run Docker on GCP Compute Instance VMs to deploy dockerized applications](https://www.pascallandau.com/blog/gcp-compute-instance-vm-docker/)   
 [Build a Docker Image and Publish It to GCP GCR & Artifact Registry using Github Actions](https://www.youtube.com/watch?v=6dLHcnlPi_U)  
+[How to deploy any docker image on google cloud run](https://www.youtube.com/watch?v=fhje9idm8V4)  
 [Spring Boot CRUD Example with H2 Database](https://www.javaguides.net/2020/04/spring-boot-h2-jpa-hibernate-restful-crud-api-tutorial.html)   
 [google-java-format Plugin for Intellij](https://plugins.jetbrains.com/plugin/8527-google-java-format)  
 [google-java-format config for Intellij](https://github.com/google/google-java-format/blob/master/README.md#intellij-jre-config)  
