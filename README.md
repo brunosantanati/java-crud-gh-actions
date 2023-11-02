@@ -22,6 +22,7 @@ docker push gcr.io/gh-actions-403902/java-crud-gh-actions
 ## Useful links
 [Instalar a CLI gcloud](https://cloud.google.com/sdk/docs/install?hl=pt_BR&_ga=2.244569217.-529178150.1698869578&_gac=1.255928825.1698869578.CjwKCAjw7oeqBhBwEiwALyHLM13TnO52jAxqtiybAwPU5qdFvRb-VpZGkKlAaGbHozT1MZHrw2VKexoCqj8QAvD_BwE)  
 [Guia de início rápido do Container Registry](https://cloud.google.com/container-registry/docs/quickstart?hl=pt-BR)  
+[Authentication methods](https://cloud.google.com/container-registry/docs/advanced-authentication)  
 [Spring Boot CRUD Example with H2 Database](https://www.javaguides.net/2020/04/spring-boot-h2-jpa-hibernate-restful-crud-api-tutorial.html)   
 [google-java-format Plugin for Intellij](https://plugins.jetbrains.com/plugin/8527-google-java-format)  
 [google-java-format config for Intellij](https://github.com/google/google-java-format/blob/master/README.md#intellij-jre-config)  
