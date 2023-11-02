@@ -5,6 +5,10 @@ docker build -t java-crud-gh-actions .
 docker run java-crud-gh-actions
 docker inspect 21b8 | grep IPAddress
 
+Enable in the GCP console:
+Container Registry
+Cloud Resource Manager API
+
 Install the gcloud CLI
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-452.0.0-linux-x86_64.tar.gz
 tar -xf google-cloud-cli-452.0.0-linux-x86_64.tar.gz
@@ -16,6 +20,7 @@ gcloud init
 gcloud auth configure-docker --quiet
 gcloud auth activate-service-account github-actions@gh-actions-403902.iam.gserviceaccount.com --key-file=/home/bruno/.docker/gh-actions-403902-3190da419204.json
 gcloud auth list
+gcloud config set project gh-actions-403902
 
 Generate tag and push it to Google Container Registry
 docker tag java-crud-gh-actions gcr.io/gh-actions-403902/java-crud-gh-actions
