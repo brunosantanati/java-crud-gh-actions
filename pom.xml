@@ -10,7 +10,7 @@
     </parent>
     <groupId>me.brunosantana</groupId>
     <artifactId>java-crud-gh-actions</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>java-crud-gh-actions</name>
     <description>Java crud project to be used in a GitHub Action workflow</description>
     <properties>
