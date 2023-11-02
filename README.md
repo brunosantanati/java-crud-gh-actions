@@ -64,6 +64,7 @@ https://java-crud-gh-actions-ktptbevp5q-ue.a.run.app/products
 [Authentication methods](https://cloud.google.com/container-registry/docs/advanced-authentication)  
 [Access control with IAM](https://cloud.google.com/container-registry/docs/access-control#permissions)  
 [gcloud auth configure-docker](https://cloud.google.com/sdk/gcloud/reference/auth/configure-docker)  
+[Configure access for Cloud Build Service Account](https://cloud.google.com/build/docs/securing-builds/configure-access-for-cloud-build-service-account?_gl=1*f2dbr9*_ga*NTI5MTc4MTUwLjE2OTg4Njk1Nzg.*_ga_WH2QY8WWF5*MTY5ODk0MTMzOC41LjEuMTY5ODk0MTQ0Ni4wLjAuMA..&_ga=2.184885037.-529178150.1698869578&_gac=1.62000478.1698941413.CjwKCAjwkY2qBhBDEiwAoQXK5X4NwI9oVkwLqUgFfUNi-w0mStRl-sE8LbmI0P--qWTVy1cc_Ho3ShoCWNUQAvD_BwE)  
 [Push the Docker image to the Google Container Register](https://www.harubears.com/en/push-the-docker-image-to-the-google-container-register/)  
 [Run Docker on GCP Compute Instance VMs to deploy dockerized applications](https://www.pascallandau.com/blog/gcp-compute-instance-vm-docker/)   
 [Build a Docker Image and Publish It to GCP GCR & Artifact Registry using Github Actions](https://www.youtube.com/watch?v=6dLHcnlPi_U)  
