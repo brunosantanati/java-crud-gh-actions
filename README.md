@@ -43,7 +43,7 @@ docker push gcr.io/gh-actions-403902/java-crud-gh-actions
 [Authentication methods](https://cloud.google.com/container-registry/docs/advanced-authentication)  
 [Access control with IAM](https://cloud.google.com/container-registry/docs/access-control#permissions)  
 [gcloud auth configure-docker](https://cloud.google.com/sdk/gcloud/reference/auth/configure-docker)  
-[Push the Docker image to the Google Container Register](https://www.harubears.com/en/push-the-docker-image-to-the-google-container-register/) 
+[Push the Docker image to the Google Container Register](https://www.harubears.com/en/push-the-docker-image-to-the-google-container-register/)  
 [Run Docker on GCP Compute Instance VMs to deploy dockerized applications](https://www.pascallandau.com/blog/gcp-compute-instance-vm-docker/)   
 [Spring Boot CRUD Example with H2 Database](https://www.javaguides.net/2020/04/spring-boot-h2-jpa-hibernate-restful-crud-api-tutorial.html)   
 [google-java-format Plugin for Intellij](https://plugins.jetbrains.com/plugin/8527-google-java-format)  
