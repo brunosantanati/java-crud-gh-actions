@@ -11,14 +11,9 @@ COPY src ./src
 # Build the application
 RUN mvn package
 
-# Use an official OpenJDK runtime with Java 17 that contains only the JAR file
-FROM openjdk:17-alpine
-
-# Copy the packaged JAR file into the container
-COPY --from=build /app/target/java-crud-gh-actions-${app.version}.jar /app/java-crud-gh-actions.jar
-
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
 
 # Run the JAR file
-CMD ["java", "-jar", "/app/java-crud-gh-actions.jar"]
+# TODO: come back here later to replace the hard-coded version with a variable app version
+CMD ["java", "-jar", "/app/target/java-crud-gh-actions-1.0.0.jar"]
