@@ -1,0 +1,3 @@
+[submodule "screenshots"]
+	path = screenshots
+	url = git@github.com:brunosantanati/java-crud-gh-actions-screenshots.git
