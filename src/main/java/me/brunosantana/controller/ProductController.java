@@ -49,7 +49,7 @@ public class ProductController {
     return HttpStatus.OK;
   }
 
-  @GetMapping("products/test")
+  @GetMapping("products/new/endpoint")
   public ResponseEntity<String> test() {
     return ResponseEntity.ok().body("It's working!");
   }
