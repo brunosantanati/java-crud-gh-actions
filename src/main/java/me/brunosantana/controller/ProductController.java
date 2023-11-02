@@ -48,4 +48,9 @@ public class ProductController {
     this.productService.deleteProduct(id);
     return HttpStatus.OK;
   }
+
+  @GetMapping("products/test")
+  public ResponseEntity<String> test() {
+    return ResponseEntity.ok().body("It's working!");
+  }
 }
