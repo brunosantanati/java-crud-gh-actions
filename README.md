@@ -1,3 +1,10 @@
+## Useful commands
+```
+docker build -t java-crud-gh-actions .
+docker run java-crud-gh-actions
+docker inspect 21b8 | grep IPAddress
+```
+
 ## Useful links
 [Spring Boot CRUD Example with H2 Database](https://www.javaguides.net/2020/04/spring-boot-h2-jpa-hibernate-restful-crud-api-tutorial.html)   
 [google-java-format Plugin for Intellij](https://plugins.jetbrains.com/plugin/8527-google-java-format)  
