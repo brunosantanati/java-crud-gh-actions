@@ -52,6 +52,9 @@ docker push gcr.io/gh-actions-403902/java-crud-gh-actions
 Deploy on Google Cloud Run
 ----------------
 gcloud run deploy java-crud-gh-actions --image gcr.io/gh-actions-403902/java-crud-gh-actions --platform managed
+
+Link to access deployed service
+https://java-crud-gh-actions-ktptbevp5q-ue.a.run.app/products
 ----------------
 ```
 
