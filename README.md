@@ -12,6 +12,7 @@ Enable in the GCP console:
 Google Container Registry API
 Cloud Resource Manager API
 Cloud Build API
+Cloud Run API
 ----------------
 
 Install the gcloud CLI
@@ -46,6 +47,11 @@ Generate tag and push it to Google Container Registry
 ----------------
 docker tag java-crud-gh-actions gcr.io/gh-actions-403902/java-crud-gh-actions
 docker push gcr.io/gh-actions-403902/java-crud-gh-actions
+----------------
+
+Deploy on Google Cloud Run
+----------------
+gcloud run deploy java-crud-gh-actions --image gcr.io/gh-actions-403902/java-crud-gh-actions --platform managed
 ----------------
 ```
 
