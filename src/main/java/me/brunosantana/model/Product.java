@@ -5,17 +5,24 @@ import java.util.Date;
 
 import jakarta.persistence.*;
 
+import lombok.Builder;
 import org.hibernate.annotations.CreationTimestamp;
 
+@Builder
 @Entity
 @Table(name = "products")
 public class Product {
 
   @Id
-  //@GeneratedValue(strategy = GenerationType.AUTO)
-  //The seed script inserts products until id 3, so for this demo application I'm starting the sequence with 4 to avoid DataIntegrityViolationException
+  // @GeneratedValue(strategy = GenerationType.AUTO)
+  // The seed script inserts products until id 3, so for this demo application I'm starting the
+  // sequence with 4 to avoid DataIntegrityViolationException
   @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "product_id_seq")
-  @SequenceGenerator(name = "product_id_seq", sequenceName = "product_id_seq", allocationSize = 1, initialValue = 4)
+  @SequenceGenerator(
+      name = "product_id_seq",
+      sequenceName = "product_id_seq",
+      allocationSize = 1,
+      initialValue = 4)
   private long id;
 
   @Column(name = "name")

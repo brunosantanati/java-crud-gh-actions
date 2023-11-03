@@ -62,7 +62,7 @@ public class ProductServiceImpl implements ProductService {
     if (productDb.isPresent()) {
       this.productRepository.delete(productDb.get());
     } else {
-      throw new ResourceNotFoundException("Record not found with id : " + productId);
+      throw new ResourceNotFoundException("Record not found with id: " + productId);
     }
   }
 }
