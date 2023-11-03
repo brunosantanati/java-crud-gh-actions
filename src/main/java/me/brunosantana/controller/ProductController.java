@@ -53,4 +53,9 @@ public class ProductController {
   public ResponseEntity<String> test() {
     return ResponseEntity.ok().body("It's working!");
   }
+
+  @GetMapping("products/new/endpoint2")
+  public ResponseEntity<String> test2() {
+    return ResponseEntity.ok().body("It's working 2!");
+  }
 }
