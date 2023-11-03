@@ -60,6 +60,7 @@ jobs:
         with:
           service: 'java-crud-gh-actions'
           image: gcr.io/$PROJECT_ID/$IMAGE_NAME:latest
+          flags: '--allow-unauthenticated'
 
       - name: Show deployed application URL
         run: 'curl "${{ steps.deploy.outputs.url }}"'
