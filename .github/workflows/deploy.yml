@@ -23,6 +23,7 @@ jobs:
 
   upload-image-to-registry:
     name: Build image and push to GCP
+    needs: test
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: java-crud-gh-actions
