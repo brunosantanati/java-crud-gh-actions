@@ -43,9 +43,9 @@ jobs:
           service_account: 'github-actions@gh-actions-403902.iam.gserviceaccount.com'
 
       - name: Run more commands to authenticate in GCP
-          run: |-
-            echo "${{ secrets.SERVICE_ACCOUNT_KEY }}"
-            echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | docker login -u _json_key --password-stdin https://gcr.io
+        run: |-
+          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}"
+          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | docker login -u _json_key --password-stdin https://gcr.io
 
       - name: Build Docker Image
         run: docker build -t $IMAGE_NAME:latest .
