@@ -22,6 +22,9 @@ jobs:
         run: mvn compile test
 
   upload-image-to-registry:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     name: Build image and push to GCP
     needs: test
     runs-on: ubuntu-latest
