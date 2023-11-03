@@ -32,20 +32,15 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
 
-      - uses: google-github-actions/setup-gcloud@v1
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
         with:
-          service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-          project_id: ${{ env.PROJECT_ID }}
-          export_default_credentials: true
+          workload_identity_provider: 'projects/562977656557/locations/global/workloadIdentityPools/gh-actions-pool/providers/github'
+          service_account: 'github-actions@gh-actions-403902.iam.gserviceaccount.com'
 
       - name: Build Docker Image
         run: docker build -t $IMAGE_NAME:latest .
-
-      - name: Authenticate in GCP
-        run: |-
-          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" > gh-actions-403902-3190da419204.json
-          gcloud auth activate-service-account github-actions@gh-actions-403902.iam.gserviceaccount.com --key-file=gh-actions-403902-3190da419204.json
-          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | docker login -u _json_key --password-stdin https://gcr.io
 
       - name: Push Docker Image to Container Registry (GCR)
         run: |-
