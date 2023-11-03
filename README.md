@@ -56,6 +56,19 @@ gcloud run deploy java-crud-gh-actions --image gcr.io/gh-actions-403902/java-cru
 Link to access deployed service
 https://java-crud-gh-actions-ktptbevp5q-ue.a.run.app/products
 ----------------
+
+Some other commands used to configure GCP or extract info from it
+----------------
+gcloud iam workload-identity-pools describe "gh-actions-pool" \
+  --project="gh-actions-403902" \
+  --location="global" \
+  --format="value(name)"
+
+gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-403902.iam.gserviceaccount.com" \
+  --project="gh-actions-403902" \
+  --role="roles/iam.workloadIdentityUser" \
+  --member="principalSet://iam.googleapis.com/projects/562977656557/locations/global/workloadIdentityPools/gh-actions-pool/attribute.repository/brunosantanati/java-crud-gh-actions"
+----------------
 ```
 
 ## Useful links
