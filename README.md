@@ -85,6 +85,7 @@ gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-40
 [How to use Github Actions with Google's Workload Identity Federation](https://www.youtube.com/watch?v=ZgVhU5qvK1M)  
 [Access Google Cloud from GitHub Action Sans Keys - Workload Identity Federation](https://www.youtube.com/watch?v=zRF5uTWXV8Y)   
 [Setting up Workload Identity Federation](https://github.com/google-github-actions/auth#setup)  
+[deploy-cloudrun GitHub Action](https://github.com/google-github-actions/deploy-cloudrun)   
 [Spring Boot CRUD Example with H2 Database](https://www.javaguides.net/2020/04/spring-boot-h2-jpa-hibernate-restful-crud-api-tutorial.html)   
 [google-java-format Plugin for Intellij](https://plugins.jetbrains.com/plugin/8527-google-java-format)  
 [google-java-format config for Intellij](https://github.com/google/google-java-format/blob/master/README.md#intellij-jre-config)  
