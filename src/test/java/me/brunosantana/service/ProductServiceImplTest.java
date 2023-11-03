@@ -41,7 +41,7 @@ public class ProductServiceImplTest {
     productService.deleteProduct(1L);
 
     verify(productRepository, times(1)).findById(anyLong());
-    verify(productRepository, times(1)).delete(optional.get());
+    verify(productRepository, times(2)).delete(optional.get());
   }
 
   @Test
