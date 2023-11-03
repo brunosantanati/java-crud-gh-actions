@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: java-crud-gh-actions
+      PROJECT_ID: gh-actions-403902
     steps:
       - name: Get code
         uses: actions/checkout@v3
