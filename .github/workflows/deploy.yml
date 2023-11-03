@@ -45,6 +45,7 @@ jobs:
         run: |-
           gcloud auth configure-docker --quiet
           gcloud auth configure-docker us-west2-docker.pkg.dev --quiet
+          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | docker login -u _json_key --password-stdin https://gcr.io
 
       - name: Push Docker Image to Container Registry (GCR)
         run: |-
