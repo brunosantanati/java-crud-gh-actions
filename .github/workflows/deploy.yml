@@ -42,9 +42,8 @@ jobs:
           workload_identity_provider: 'projects/562977656557/locations/global/workloadIdentityPools/gh-actions-pool/providers/github'
           service_account: 'github-actions@gh-actions-403902.iam.gserviceaccount.com'
 
-      - name: Run more commands to authenticate in GCP
+      - name: Run one more command to authenticate to GCP
         run: |-
-          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | base64 --decode
           echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | base64 --decode | docker login -u _json_key --password-stdin https://gcr.io
 
       - name: Build Docker Image
@@ -54,3 +53,12 @@ jobs:
         run: |-
           docker tag $IMAGE_NAME:latest gcr.io/$PROJECT_ID/$IMAGE_NAME:latest
           docker push gcr.io/$PROJECT_ID/$IMAGE_NAME:latest
+
+      - id: Deploy Cloud Run
+        uses: google-github-actions/deploy-cloudrun@v1
+        with:
+          service: 'java-crud-gh-actions'
+          image: 'gcr.io/$PROJECT_ID/$IMAGE_NAME:latest'
+
+      - name: Show deployed application URL
+        run: 'curl "${{ steps.deploy.outputs.url }}"'
