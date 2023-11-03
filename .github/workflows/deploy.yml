@@ -41,10 +41,10 @@ jobs:
       - name: Build Docker Image
         run: docker build -t $IMAGE_NAME:latest .
 
-      - name: Configure Docker Client
+      - name: Authenticate in GCP
         run: |-
-          gcloud auth configure-docker --quiet
-          gcloud auth configure-docker us-west2-docker.pkg.dev --quiet
+          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" > gh-actions-403902-3190da419204.json
+          gcloud auth activate-service-account github-actions@gh-actions-403902.iam.gserviceaccount.com --key-file=gh-actions-403902-3190da419204.json
           echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | docker login -u _json_key --password-stdin https://gcr.io
 
       - name: Push Docker Image to Container Registry (GCR)
