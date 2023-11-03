@@ -71,6 +71,7 @@ https://java-crud-gh-actions-ktptbevp5q-ue.a.run.app/products
 [How to deploy any docker image on google cloud run](https://www.youtube.com/watch?v=fhje9idm8V4)  
 [How to use Github Actions with Google's Workload Identity Federation](https://www.youtube.com/watch?v=ZgVhU5qvK1M)  
 [Access Google Cloud from GitHub Action Sans Keys - Workload Identity Federation](https://www.youtube.com/watch?v=zRF5uTWXV8Y)   
+[Setting up Workload Identity Federation](https://github.com/google-github-actions/auth#setup)  
 [Spring Boot CRUD Example with H2 Database](https://www.javaguides.net/2020/04/spring-boot-h2-jpa-hibernate-restful-crud-api-tutorial.html)   
 [google-java-format Plugin for Intellij](https://plugins.jetbrains.com/plugin/8527-google-java-format)  
 [google-java-format config for Intellij](https://github.com/google/google-java-format/blob/master/README.md#intellij-jre-config)  
