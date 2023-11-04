@@ -94,4 +94,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate report
-        uses: brunosantanati/report-gh-actions@v1
+        uses: brunosantanati/report-gh-actions@v2
