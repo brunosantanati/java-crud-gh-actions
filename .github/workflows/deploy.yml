@@ -87,3 +87,11 @@ jobs:
 
       - name: Run e2e tests
         run: 'mvn -DargLine="-DAPI_URL=${{ needs.build-and-deploy.outputs.apiUrl }}" compile test'
+
+  report:
+    name: Generate CSV report with products
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate report
+        uses: brunosantanati/report-gh-actions@v1
