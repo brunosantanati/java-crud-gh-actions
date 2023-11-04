@@ -95,11 +95,11 @@ jobs:
     steps:
       - id: report
         name: Generate report
-        uses: brunosantanati/report-gh-actions@v2.4
+        uses: brunosantanati/report-gh-actions@v2.5
         with:
           apiUrl: ${{ needs.build-and-deploy.outputs.apiUrl }}
       - name: Save CSV file
-        run: 'echo ${{ steps.report.outputs.csvContent }} | base64 --decode > products.csv'
+        run: 'echo ${{ steps.report.outputs.csvContent }} > products.csv'
       - name: Upload artifact (CSV report)
         uses: actions/upload-artifact@v3
         with:
