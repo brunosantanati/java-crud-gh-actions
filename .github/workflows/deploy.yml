@@ -95,7 +95,7 @@ jobs:
     steps:
       - id: report
         name: Generate report
-        uses: brunosantanati/report-gh-actions@v2.3
+        uses: brunosantanati/report-gh-actions@v2.4
         with:
           apiUrl: ${{ needs.build-and-deploy.outputs.apiUrl }}
       - name: Save CSV file
