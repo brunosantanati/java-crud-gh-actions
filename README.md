@@ -90,4 +90,5 @@ gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-40
 [google-java-format Plugin for Intellij](https://plugins.jetbrains.com/plugin/8527-google-java-format)  
 [google-java-format config for Intellij](https://github.com/google/google-java-format/blob/master/README.md#intellij-jre-config)  
 [Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database)  
-[Quick Guide on Loading Initial Data with Spring Boot](https://www.baeldung.com/spring-boot-data-sql-and-schema-sql)  
+[Quick Guide on Loading Initial Data with Spring Boot](https://www.baeldung.com/spring-boot-data-sql-and-schema-sql)   
+[Creating a JavaScript action](https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action)  
