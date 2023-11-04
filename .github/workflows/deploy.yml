@@ -64,3 +64,26 @@ jobs:
 
       - name: Show deployed application URL
         run: 'curl "${{ steps.deploy.outputs.url }}"'
+
+    outputs:
+      apiUrl: ${{ steps.deploy.outputs.url }}
+
+  e2e:
+    name: Run e2e Tests
+    needs: upload-image-to-registry
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+        with:
+          name: brunosantanati/e2e-gh-actions
+          ref: main
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Test code
+        run: 'mvn -DargLine="-DAPI_URL=${{ needs.upload-image-to-registry.outputs.apiUrl }}" compile test'
