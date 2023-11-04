@@ -21,11 +21,11 @@ jobs:
       - name: Test code
         run: mvn compile test
 
-  upload-image-to-registry:
+  build-and-deploy:
     permissions:
       contents: 'read'
       id-token: 'write'
-    name: Build image and push to GCP
+    name: Build the image, push and deploy it to GCP
     needs: test
     runs-on: ubuntu-latest
     env:
@@ -55,7 +55,7 @@ jobs:
           docker push gcr.io/$PROJECT_ID/$IMAGE_NAME:latest
 
       - id: deploy
-        name: Deploy Cloud Run
+        name: Deploy the application image to Cloud Run
         uses: google-github-actions/deploy-cloudrun@v1
         with:
           service: 'java-crud-gh-actions'
@@ -70,7 +70,7 @@ jobs:
 
   e2e:
     name: Run e2e Tests
-    needs: upload-image-to-registry
+    needs: build-and-deploy
     runs-on: ubuntu-22.04
     steps:
       - name: Get code
@@ -86,4 +86,4 @@ jobs:
           java-version: '17'
 
       - name: Run e2e tests
-        run: 'mvn -DargLine="-DAPI_URL=${{ needs.upload-image-to-registry.outputs.apiUrl }}" compile test'
+        run: 'mvn -DargLine="-DAPI_URL=${{ needs.build-and-deploy.outputs.apiUrl }}" compile test'
