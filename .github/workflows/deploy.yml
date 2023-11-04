@@ -76,7 +76,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
         with:
-          name: brunosantanati/e2e-gh-actions
+          repository: brunosantanati/e2e-gh-actions
           ref: main
 
       - name: Setup Java 17
@@ -85,5 +85,5 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Test code
+      - name: Run e2e tests
         run: 'mvn -DargLine="-DAPI_URL=${{ needs.upload-image-to-registry.outputs.apiUrl }}" compile test'
