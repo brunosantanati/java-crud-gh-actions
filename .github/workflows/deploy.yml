@@ -93,7 +93,15 @@ jobs:
     needs: build-and-deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Generate report
-        uses: brunosantanati/report-gh-actions@v2.1
+      - id: report
+        name: Generate report
+        uses: brunosantanati/report-gh-actions@v2.2
         with:
           apiUrl: ${{ needs.build-and-deploy.outputs.apiUrl }}
+      - name: Save CSV file
+        run: 'echo ${{ steps.report.outputs.csvContent }} | base64 --decode > products.csv'
+      - name: Upload artifact (CSV report)
+        uses: actions/upload-artifact@v3
+        with:
+          name: report-artifact
+          path: products.csv
