@@ -92,3 +92,4 @@ gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-40
 [Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database)  
 [Quick Guide on Loading Initial Data with Spring Boot](https://www.baeldung.com/spring-boot-data-sql-and-schema-sql)   
 [Creating a JavaScript action](https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action)  
+[Storing workflow data as artifacts](https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts)  
