@@ -1,3 +1,3 @@
 INSERT INTO products (id, name, description, price, created_at, updated_at) VALUES (1, 'Livro Deitel Java Como Programar', 'livro muito bom', 199.50, '2023-11-01T21:43:20.536+00:00', '2023-11-01T21:43:20.536+00:00');
 INSERT INTO products (id, name, description, price, created_at, updated_at) VALUES (2, 'Livro TDD da Casa do Código', 'livro top', 50, '2023-11-01T21:43:20.536+00:00', '2023-11-01T21:43:20.536+00:00');
-INSERT INTO products (id, name, description, price, created_at, updated_at) VALUES (3, 'Livro Flexible Dieting', 'livro sobre dieta', 90, '2023-11-01T21:43:20.536+00:00', '2023-11-01T21:43:20.536+00:00');
+INSERT INTO products (id, name, description, price, created_at, updated_at) VALUES (3, 'Livro Flexible Dieting', 'livro sobre dieta', 900, '2023-11-01T21:43:20.536+00:00', '2023-11-01T21:43:20.536+00:00');
