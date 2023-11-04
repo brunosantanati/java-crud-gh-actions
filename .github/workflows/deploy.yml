@@ -93,7 +93,7 @@ jobs:
     needs: build-and-deploy
     runs-on: ubuntu-latest
     steps:
-        name: Generate report
+      - name: Generate report
         uses: brunosantanati/report-gh-actions@v2.8
         with:
           apiUrl: ${{ needs.build-and-deploy.outputs.apiUrl }}
