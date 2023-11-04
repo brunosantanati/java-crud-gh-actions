@@ -95,7 +95,7 @@ jobs:
     steps:
       - id: csv-report
         name: Generate report
-        uses: brunosantanati/report-gh-actions@v2.6
+        uses: brunosantanati/report-gh-actions@v2.7
         with:
           apiUrl: ${{ needs.build-and-deploy.outputs.apiUrl }}
       - name: Output info
