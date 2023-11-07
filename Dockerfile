@@ -9,7 +9,9 @@ COPY pom.xml .
 COPY src ./src
 
 # Build the application
-RUN mvn package
+# We need to use -DskipTests because there is no Docker environment inside the container to run
+# the integration test which uses Testcontainers
+RUN mvn package -DskipTests
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
