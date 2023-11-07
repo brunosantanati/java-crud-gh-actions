@@ -121,6 +121,47 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "test new endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/products/new/endpoint2",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"products",
+						"new",
+						"endpoint2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get album",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/albums/1",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"albums",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
