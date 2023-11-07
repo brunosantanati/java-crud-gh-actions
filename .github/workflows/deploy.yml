@@ -6,7 +6,7 @@ on:
 jobs:
 
   test:
-    name: Run Unit Tests
+    name: Run Unit and Integration Tests
     runs-on: ubuntu-22.04
     steps:
       - name: Get code
@@ -18,7 +18,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Test code
+      - name: Run tests
         run: mvn compile test
 
   build-and-deploy:
@@ -85,7 +85,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run e2e tests
+      - name: Run tests
         run: 'mvn -DargLine="-DAPI_URL=${{ needs.build-and-deploy.outputs.apiUrl }}" compile test'
 
   report:
