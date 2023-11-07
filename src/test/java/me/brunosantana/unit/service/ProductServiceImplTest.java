@@ -1,9 +1,10 @@
-package me.brunosantana.service;
+package me.brunosantana.unit.service;
 
 import me.brunosantana.exception.ResourceNotFoundException;
 import me.brunosantana.model.Product;
 import me.brunosantana.repository.ProductRepository;
 
+import me.brunosantana.service.ProductServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
