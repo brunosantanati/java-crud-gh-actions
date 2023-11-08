@@ -1,12 +1,12 @@
 name: e2e Tests Execution
-env:
-  GCP_API_URL: ${{ env.GCP_API_URL }}
 on: workflow_dispatch
 jobs:
 
   e2e:
     name: Run e2e Tests
     runs-on: ubuntu-22.04
+    env:
+      GCP_API_URL: ${{ vars.GCP_API_URL }}
     steps:
       - name: Get code
         uses: actions/checkout@v3
