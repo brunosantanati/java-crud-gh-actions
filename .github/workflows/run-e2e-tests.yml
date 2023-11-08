@@ -1,0 +1,24 @@
+name: e2e Tests Execution
+env:
+  GCP_API_URL: ${{ env.GCP_API_URL }}
+on: workflow_dispatch
+jobs:
+
+  e2e:
+    name: Run e2e Tests
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+        with:
+          repository: brunosantanati/e2e-gh-actions
+          ref: main
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Run tests
+        run: 'mvn -DargLine="-DAPI_URL=$GCP_API_URL" compile test'
