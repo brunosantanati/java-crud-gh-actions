@@ -97,3 +97,4 @@ gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-40
 [Prevent a Bad Merge in GitHub Actions](https://calmcode.io/github-actions/prevent-merge.html)  
 [GitHub Actions Page](https://github.com/features/actions)  
 [GitHub Actions documentation](https://docs.github.com/en/actions)  
+[Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)   
