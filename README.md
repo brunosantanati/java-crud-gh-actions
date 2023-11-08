@@ -94,3 +94,6 @@ gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-40
 [Creating a JavaScript action](https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action)  
 [Storing workflow data as artifacts](https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts)  
 [Testing REST API integrations using WireMock](https://testcontainers.com/guides/testing-rest-api-integrations-using-wiremock/)   
+[Prevent a Bad Merge in GitHub Actions](https://calmcode.io/github-actions/prevent-merge.html)  
+[GitHub Actions Page](https://github.com/features/actions)  
+[GitHub Actions documentation](https://docs.github.com/en/actions)  
