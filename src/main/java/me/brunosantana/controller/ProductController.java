@@ -58,4 +58,10 @@ public class ProductController {
   public ResponseEntity<String> test2() {
     return ResponseEntity.ok().body("It's working Diciane!");
   }
+
+  @GetMapping("products/new/douglas")
+  public ResponseEntity<String> test3() {
+    return ResponseEntity.ok().body("Hello Douglas!");
+  }
+
 }
