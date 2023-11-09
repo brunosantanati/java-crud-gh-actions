@@ -102,3 +102,4 @@ gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-40
 [Software Delivery Guide](https://martinfowler.com/delivery.html)  
 [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)  
 [ContinuousDelivery](https://martinfowler.com/bliki/ContinuousDelivery.html)  
+[Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart)  
