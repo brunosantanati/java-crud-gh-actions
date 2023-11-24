@@ -98,6 +98,7 @@ gcloud iam service-accounts add-iam-policy-binding "github-actions@gh-actions-40
 [GitHub Actions Page](https://github.com/features/actions)  
 [GitHub Actions documentation](https://docs.github.com/en/actions)  
 [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)   
+[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts)  
 [Secrets and Environment Variables in your GitHub Action](https://dev.to/this-is-learning/secrets-and-environment-variables-in-your-github-action-1pfn)   
 [Software Delivery Guide](https://martinfowler.com/delivery.html)  
 [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)  
