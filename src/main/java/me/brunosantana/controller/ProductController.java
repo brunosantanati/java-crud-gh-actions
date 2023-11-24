@@ -54,4 +54,9 @@ public class ProductController {
     return ResponseEntity.ok().body("endpoint is working!");
   }
 
+  @GetMapping("products/new/lobo-solitario")
+  public ResponseEntity<String> loboSolitario() {
+    return ResponseEntity.ok().body("Lobo Solitario!");
+  }
+
 }
